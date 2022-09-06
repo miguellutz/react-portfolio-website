@@ -40,8 +40,8 @@ body {
   line-height: 1.7;
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(41, 0, 67, 0.6)
+      rgba(0, 0, 0, 0.8),
+      rgba(41, 0, 67, 0.8)
     ), url(./assets/background-image-raindrops-neon.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
