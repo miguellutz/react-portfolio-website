@@ -21,7 +21,7 @@
   --transition: all 400ms ease;
 
   --container-width-lg: 75%;
-  --container-wdith-md: 86%;
+  --container-width-md: 86%;
   --container-width-ms: 90%;
 }
 
@@ -130,7 +130,7 @@ img {
   }
 }
 
-/* ========== Media Queries (medium devices) ======== */
+/* ========== Media Queries (small devices) ======== */
 
 @media screen and (max-width: 600px) {
   .container {

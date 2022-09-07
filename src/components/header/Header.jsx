@@ -1,14 +1,14 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA-buttons'
-import ME from '../../assets/Lebenslauf_Bild_2_rund.png';
+import ME from '../../assets/Profile_Foto.png';
 import HeaderSocials from './HeaderSocials';
 
 const Header = () => {
   return (
     <header>
       <div className="container header__container" /* BEM naming convention */>
-        <h5>Hello I'm</h5>
+        <h5>Hello, I am</h5>
         <h1>Miguel Lutz</h1>
         <h5 className="text-light">Fullstack Developer from Cologne, Germany</h5>
         <CTA />
