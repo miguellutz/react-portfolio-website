@@ -35,14 +35,14 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--color-bg);
+  background: black;
   color: var(--color-white);
   line-height: 1.7;
-  background:
+  /* background:
     linear-gradient(
       rgba(0, 0, 0, 0.0),
       rgba(41, 0, 67, 0.8)
-    ), url(./assets/background-image-neon-bars-curved.jpeg);
+    ), url(./assets/background-image-neon-bars-curved.jpeg); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -64,7 +64,7 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
+  margin-top: 5rem;
   height: 100vh;
 }
 

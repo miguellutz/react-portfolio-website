@@ -1,7 +1,8 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA-buttons'
-import ME from '../../assets/Profile_Foto.png';
+// import ME from '../../assets/Profile_Foto.png';
+import Video from '../../assets/video-2.mp4'
 import HeaderSocials from './HeaderSocials';
 
 const Header = () => {
@@ -14,10 +15,14 @@ const Header = () => {
         <CTA />
         <HeaderSocials />
 
-        <div className="me">
-          <img src={ME} alt="me" />
-        </div>
-
+        {/* <div className="me"> */}
+          {/* <img src={ME} alt="me" /> */}
+          <div className="video-container">
+            <video autoPlay muted loop id="video">
+              <source src={Video} type="video/mp4" />
+            </video>
+          </div>
+        {/* </div> */}
         <a href="#contact" className='scroll__down'>Scroll Down</a>
       </div>
     </header>
