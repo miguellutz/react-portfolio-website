@@ -48,7 +48,7 @@ const About = () => {
           </p>
 
 
-          <a href="#contact" className='btn btn-primary'></a>
+          <a href="#contact" className='btn btn-primary'>Let's Talk!</a>
         </div>
       </div>
     </section>

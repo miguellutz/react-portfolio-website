@@ -28,14 +28,7 @@ header {
   gap: 0.8rem;
   position: absolute;
   left: 5vw;
-  bottom: 3rem;
-}
-
-.header__socials::after {
-  content: '';
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
+  bottom: calc(50% - 53.5px);
 }
 
 /* ========= Me ========= */
@@ -52,7 +45,7 @@ header {
 #video {
   width: 20rem;
   height: 20rem;
-  position: absolute;   
+  position: absolute;
   left: calc(50% - 10rem);
   object-fit: cover;
   border-radius: 50%;
@@ -65,7 +58,7 @@ header {
 .scroll__down {
   position: absolute;
   right: 5vw;
-  bottom: 5rem;
+  bottom: calc(50% - 41px);
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
