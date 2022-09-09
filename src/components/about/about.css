@@ -63,3 +63,17 @@
 .about__content p {
   margin: 4rem 0;
 }
+
+/* ========== Media Queries (medium devices) ======== */
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========== Media Queries (small devices) ======== */
+
+@media screen and (max-width: 600px) {
+
+}
