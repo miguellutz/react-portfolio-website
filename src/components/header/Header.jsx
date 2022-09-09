@@ -15,14 +15,12 @@ const Header = () => {
         <CTA />
         <HeaderSocials />
 
-        {/* <div className="me"> */}
-          {/* <img src={ME} alt="me" /> */}
-          <div className="video-container">
-            <video autoPlay muted loop id="video">
-              <source src={Video} type="video/mp4" />
-            </video>
-          </div>
-        {/* </div> */}
+        <div className="video-container">
+          <video autoPlay muted loop id="video">
+            <source src={Video} type="video/mp4" />
+          </video>
+        </div>
+
         <a href="#contact" className='scroll__down'>Scroll Down</a>
       </div>
     </header>
