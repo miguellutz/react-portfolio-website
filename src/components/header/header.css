@@ -1,19 +1,19 @@
 header {
   height: 100vh;
-  width: 100%;
   overflow: hidden;
 }
 
 .header__container {
   text-align: center;
+  margin-top: 5rem;
   height: 100%;
   width: 100%;
   position: relative;
-  background:
+  /* background:
   linear-gradient(
     rgba(0, 0, 0, 0.6),
     rgba(41, 0, 67, 0.7)
-  ), url(../../assets/background-image-raindrops-neon.jpeg);
+  ), url(../../assets/background-image-raindrops-neon.jpeg); */
 }
 
 /* ========= CTA ========= */

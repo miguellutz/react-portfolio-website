@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container" /* BEM naming convention */>
-        <h5>Hello, I am</h5>
+        <h5 id='intro-text'>Hello, I am</h5>
         <h1>Miguel Lutz</h1>
         <h5 className="text-light">Fullstack Developer from Cologne, Germany</h5>
         <CTA />
