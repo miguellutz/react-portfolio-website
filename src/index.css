@@ -59,7 +59,7 @@ body {
 /* ================= General Styles =============== */
 
 .container {
-  width: var(--containder-width-lg);
+  width: 100%;
   margin: 0 auto; /* position in the middle horizontally */
 }
 
@@ -130,9 +130,6 @@ img {
 /* ========== Media Queries (medium devices) ======== */
 
 @media screen and (max-width: 1024px) {
-  .container {
-    width: var(--container-width-md);
-  }
 
   section {
     margin-top: 6rem;

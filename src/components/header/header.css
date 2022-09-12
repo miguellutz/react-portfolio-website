@@ -1,13 +1,19 @@
 header {
   height: 100vh;
-  padding-top: 7rem;
+  width: 100%;
   overflow: hidden;
 }
 
 .header__container {
   text-align: center;
   height: 100%;
+  width: 100%;
   position: relative;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(41, 0, 67, 0.7)
+  ), url(../../assets/background-image-raindrops-neon.jpeg);
 }
 
 /* ========= CTA ========= */
@@ -31,15 +37,8 @@ header {
   bottom: calc(50% - 53.5px);
 }
 
-/* ========= Me ========= */
-
-.me {
-  width: 22rem;
-  height: 30rem;
-  position: absolute;
-  left: calc(50% - 11rem);
-  /* transform: translateX(-50%); */
-  margin-top: 4rem;
+.video__container {
+  text-align: center;
 }
 
 #video {
