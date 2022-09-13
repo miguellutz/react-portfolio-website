@@ -9,6 +9,7 @@
   border-radius: 2rem;
   border: 1px solid white;
   transition: var(--transition);
+  background: var(--color-bg-black)
 }
 
 .experience__container > div:hover {
@@ -64,9 +65,13 @@
     gap: 1rem;
   }
 
-  .experience__container > div {
-    width: 100%;
-    padding: 2rem 1rem;
+  .experience__content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
+  .experience__container > div {
+    width: 90%;
+    padding: 2rem 1rem;
+  }
 }
