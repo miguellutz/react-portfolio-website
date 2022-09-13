@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  background: var(--color-bg-black);
 }
 
 .experience__container > div {
@@ -10,6 +9,7 @@
   border-radius: 2rem;
   border: 1px solid white;
   transition: var(--transition);
+  background: var(--color-bg-black)
 }
 
 .experience__container > div:hover {
