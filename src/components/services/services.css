@@ -5,7 +5,7 @@
 }
 
 .service {
-  background: rgb(37, 37, 37);
+  background: var(--color-bg-black);
   border-radius: 2rem;
   border: 1px solid transparent;
   height: fit-content;

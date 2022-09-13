@@ -32,7 +32,7 @@
 }
 
 .about__card {
-  background: rgb(14, 14, 14);
+  background: var(--color-bg-black);
   background-repeat: no-repeat;
   border: 1px solid transparent;
   border-radius: 1rem;

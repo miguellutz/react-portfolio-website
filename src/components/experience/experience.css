@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  background: var(--color-bg-black);
 }
 
 .experience__container > div {
@@ -68,5 +69,4 @@
     width: 100%;
     padding: 2rem 1rem;
   }
-
 }
