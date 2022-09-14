@@ -10,6 +10,7 @@
   border: 1px solid transparent;
   height: fit-content;
   transition: var(--transition);
+  margin: 0 auto;
 }
 
 .service:hover {
@@ -69,5 +70,9 @@
   .services__container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .service {
+    width: 90%;
   }
 }
