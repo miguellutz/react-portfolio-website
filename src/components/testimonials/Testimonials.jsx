@@ -15,31 +15,31 @@ const Testimonials = () => {
         <article className="testimonial">
           <div className="client__avatar">
             <img src={AVTR1} alt="" />
-            <h5 className='client__name'>Ernest Achiever</h5>
-            <small className='client__review'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla maiores eius amet necessitatibus molestias sequi totam officiis? Atque, quasi reprehenderit impedit nulla modi illum, dolorum pariatur distinctio nesciunt eaque labore.
-            </small>
           </div>
+          <h5 className='client__name'>Ernest Achiever</h5>
+          <small className='client__review'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla maiores eius amet necessitatibus molestias sequi totam officiis? Atque, quasi reprehenderit impedit nulla modi illum, dolorum pariatur distinctio nesciunt eaque labore.
+          </small>
         </article>
 
         <article className="testimonial">
           <div className="client__avatar">
             <img src={AVTR2} alt="" />
-            <h5 className='client__name'>Ernest Achiever</h5>
-            <small className='client__review'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla maiores eius amet necessitatibus molestias sequi totam officiis? Atque, quasi reprehenderit impedit nulla modi illum, dolorum pariatur distinctio nesciunt eaque labore.
-            </small>
           </div>
+          <h5 className='client__name'>Ernest Achiever</h5>
+          <small className='client__review'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla maiores eius amet necessitatibus molestias sequi totam officiis? Atque, quasi reprehenderit impedit nulla modi illum, dolorum pariatur distinctio nesciunt eaque labore.
+          </small>
         </article>
 
         <article className="testimonial">
           <div className="client__avatar">
             <img src={AVTR3} alt="" />
-            <h5 className='client__name'>Ernest Achiever</h5>
-            <small className='client__review'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla maiores eius amet necessitatibus molestias sequi totam officiis? Atque, quasi reprehenderit impedit nulla modi illum, dolorum pariatur distinctio nesciunt eaque labore.
-            </small>
           </div>
+          <h5 className='client__name'>Ernest Achiever</h5>
+          <small className='client__review'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla maiores eius amet necessitatibus molestias sequi totam officiis? Atque, quasi reprehenderit impedit nulla modi illum, dolorum pariatur distinctio nesciunt eaque labore.
+          </small>
         </article>
 
       </div>

@@ -1,0 +1,28 @@
+.container.testimonials__container {
+  width: 40%;
+}
+
+.client__avatar {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 0.2rem solid var(--color-primary);
+}
+
+.testimonial {
+  background: var(--color-primary-variant);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+
+.client__review {
+  color: var(--color-light);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
