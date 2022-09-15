@@ -1,8 +1,6 @@
 import React from 'react'
 import './contact.css'
 
-import Mailto from 'react-mailto'
-
 import {ImMail} from 'react-icons/im'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaPhoneSquareAlt} from 'react-icons/fa'
@@ -19,7 +17,7 @@ const Contact = () => {
             <ImMail />
             <h4>Email</h4>
             <h5>miguellutz31@gmail.com</h5>
-            <a href="mailto:miguellutz31@gmail.com">Send Email</a>
+            <a href="mailto:miguellutz31@gmail.com" target="_blank" rel="noreferrer">Send Email</a>
           </article>
 
           <article className="contact__option">
@@ -27,19 +25,23 @@ const Contact = () => {
             <h4>Linkedin</h4>
             <h5>Miguel Lutz</h5>
             <a href="https://linkedin.com/in/miguellutz" target='_blank' rel="noreferrer">Contact</a>
-            <Mailto email="miguellutz31@gmail.com">Email Me</Mailto>
           </article>
 
           <article className="contact__option">
             <FaPhoneSquareAlt />
             <h4>Phone</h4>
             <h5>+4915752008690</h5>
-            {/* <a href="https://api.whatsapp.com/send?phone+4915752008690" target='_blank' rel="noreferrer">Send Message</a> */}
+            <a href="https://api.whatsapp.com/send?phone+4915752008690" target='_blank' rel="noreferrer">Send Message</a>
           </article>
 
         </div>
         {/* End of contact options*/}
-        <form action=""></form>
+        <form action="">
+          <input type="text" name='name' placeholder="Full Name" required />
+          <input type="email" name='email' placeholder='Email' required />
+          <textarea name="message" rows="7" placeholder='Your Message' required ></textarea>
+          <button type="submit" className='btn btn-primary'>Send Message</button>
+        </form>
       </div>
     </section>
   )
