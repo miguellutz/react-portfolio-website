@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Klikmeet Web Development. All rights reserved.</small>
+        <small><small className='footer__copyright-logo'>&copy;</small> Klikmeet Web Development. All rights reserved.</small>
       </div>
     </footer>
   )
