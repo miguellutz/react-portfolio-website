@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './contact.css'
+
+import AlertComponent from '../alert/Alert'
 
 import {ImMail} from 'react-icons/im'
 import {BsLinkedin} from 'react-icons/bs'
@@ -10,14 +12,24 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
-  // const [statusMessage, setStatusMessage] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
+  const clearStatusMessage = () => setStatusMessage("")
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_w2cu5lw', 'template_ayxm01b', form.current, 'wglmctuRLORHKnmf2')
+    .then((result) => {
+      console.log(result.text);
+      setStatusMessage("Email sent successfully!")
+      <AlertComponent; key='success'; variant='success'/>
+    }, (error) => {
+      console.log(error.text);
+      setStatusMessage(`${error.text} happened`)
+     });
 
     e.target.reset()
+    clearStatusMessage()
   };
 
   return (
@@ -56,7 +68,6 @@ const Contact = () => {
           <textarea name="message" rows="7" placeholder='Your Message' required ></textarea>
           <button type="submit" className='btn btn-primary '>Send Message</button>
         </form>
-        {/* <p>{statusMessage}</p> */}
       </div>
     </section>
   )
