@@ -5,7 +5,21 @@ import {ImMail} from 'react-icons/im'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaPhoneSquareAlt} from 'react-icons/fa'
 
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+  const form = useRef();
+  // const [statusMessage, setStatusMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_w2cu5lw', 'template_ayxm01b', form.current, 'wglmctuRLORHKnmf2')
+
+    e.target.reset()
+  };
+
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -36,12 +50,13 @@ const Contact = () => {
 
         </div>
         {/* End of contact options*/}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder="Full Name" required />
           <input type="email" name='email' placeholder='Email' required />
           <textarea name="message" rows="7" placeholder='Your Message' required ></textarea>
           <button type="submit" className='btn btn-primary '>Send Message</button>
         </form>
+        {/* <p>{statusMessage}</p> */}
       </div>
     </section>
   )
