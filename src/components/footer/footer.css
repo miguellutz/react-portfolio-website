@@ -11,7 +11,7 @@ footer a {
 }
 
 .footer__logo {
-  width: 100%;
+  width: 10%;
   aspect-ratio: 1/1;
   margin-bottom: 2rem;
   display: inline-block;
@@ -55,4 +55,26 @@ footer a {
 .footer__copyright-logo {
   color: var(--color-primary);
   font-size: 1rem;
+}
+
+/* ========== Media Queries (small devices) ======== */
+
+@media screen and (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer__socials {
+    margin-bottom: 2rem;
+  }
+
+  .footer__copyright {
+    margin-bottom: 5rem;
+  }
+
+  .footer__logo {
+    width: 40%;
+  }
 }
