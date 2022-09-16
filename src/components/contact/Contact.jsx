@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './contact.css'
 
-import AlertComponent from '../alert/Alert'
+import AlertComponent from '../alert/AlertComponent'
 
 import {ImMail} from 'react-icons/im'
 import {BsLinkedin} from 'react-icons/bs'
@@ -21,11 +21,16 @@ const Contact = () => {
     emailjs.sendForm('service_w2cu5lw', 'template_ayxm01b', form.current, 'wglmctuRLORHKnmf2')
     .then((result) => {
       console.log(result.text);
-      setStatusMessage("Email sent successfully!")
-      <AlertComponent; key='success'; variant='success'/>
+      setStatusMessage("Email sent successfully!");
+
+      <AlertComponent key='success' variant='success' statusMessage={statusMessage} />
+
     }, (error) => {
       console.log(error.text);
-      setStatusMessage(`${error.text} happened`)
+      setStatusMessage(`${error.text} happened`);
+
+      <AlertComponent key='success' variant='success' statusMessage={statusMessage} />
+
      });
 
     e.target.reset()
